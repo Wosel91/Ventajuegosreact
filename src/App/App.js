@@ -6,6 +6,7 @@ import { izquierdalayout } from '../Layouts/izquierdalayout';
 import { nadalayout } from '../Layouts/nadalayout';
 import { restringidolayout } from '../Layouts/restringidolayout';
 import { portadalayout } from '../Layouts/portadalayout';
+import { Component404 } from '../components/404/Component404';
 
 export default class App extends Component {
   render() {
@@ -19,6 +20,8 @@ export default class App extends Component {
               <Route path={'/2'} exact component={nadalayout} />
               <Route path={'/3'} exact component={restringidolayout} />
               <Route path={'/4'} exact component={portadalayout} />
+              <Route  component={Component404} />
+
             </Switch>
           </div>
         </Router>
