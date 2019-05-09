@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const adminlayout = () => {
+export const nadalayout = () => {
       return <div>
-                <h1>adminlayout</h1>
+                <h1>nadalayout</h1>
                 
              </div>
       }

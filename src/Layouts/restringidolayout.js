@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const adminlayout = () => {
+export const restringidolayout = () => {
       return <div>
-                <h1>adminlayout</h1>
+                <h1>restringidolayout</h1>
                 
              </div>
       }
