@@ -1,0 +1,15 @@
+{
+  "name": "ventajuegos",
+  "version": "1.0.0",
+  "description": "Front en React de aplicacion de venta de juegos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wosel91/Ventajuegosreact"
+  },
+  "author": "",
+  "license": "ISC"
+}
