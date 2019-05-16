@@ -1,0 +1,18 @@
+.margenlogin {
+    border-right: 1px solid #cccccc;
+}
+.signin-btn-fb {
+    /* background: #3e579b url("../../../../assets/img/ig-login-logo2.png") no-repeat; */
+    background-position: 30px 16px;
+}
+.fondo-naranja {
+    background-color: #ff5400;
+}
+
+.ng-invalid{
+    border-block-end-color:red;
+}
+.iconolog{
+    width: 40px; 
+    padding: 1px;
+}

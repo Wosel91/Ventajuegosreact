@@ -31,3 +31,47 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+.blanco {
+  color: #ffffff;
+}
+.naranja {
+  color: #ff5400;
+}
+.gris{
+  color: #cccccc;
+}
+.fondonegro{
+ 
+  background-color: black;
+}
+.fondogris{
+  background-color: #f0f0f0;
+}
+.fondoblanco{
+  background-color: white;
+}
+
+
+#backgroundLink {
+ 
+  width: 100%;
+  height: 100%;
+  top: 127px;
+  left: 0;
+ 
+  top: 0px;
+}
+body {
+  background-color: #eeeeee;
+}
+
+.ng-invalid{
+  border-block-end-color:tomato;
+}
+.ng-valid{
+  border-block-end-color:green;
+}

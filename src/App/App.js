@@ -1,31 +1,28 @@
 import React, { Component } from 'react'
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import {adminlayout} from '../Layouts/adminlayout'
+import { Router, Route, Switch } from 'react-router-dom';
+import { portadalayout } from '../Layouts/portadalayout/index';
 import { izquierdalayout } from '../Layouts/izquierdalayout';
-import { nadalayout } from '../Layouts/nadalayout';
-import { restringidolayout } from '../Layouts/restringidolayout';
-import { portadalayout } from '../Layouts/portadalayout';
-import { Component404 } from '../components/404/Component404';
+import { PrivateRoute } from '../Routes/PrivateRoute';
+import Auth from '../Services/Auth/Auth'
+import { history } from "../history";
+import Producto from "../components/Producto/Producto"
+
+
+
+
+const auth = new Auth();
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <Router>
-          <div>
-            <Switch>
-              <Route path={'/'} exact component={adminlayout} />
-              <Route path={'/1'} exact component={izquierdalayout} />
-              <Route path={'/2'} exact component={nadalayout} />
-              <Route path={'/3'} exact component={restringidolayout} />
-              <Route path={'/4'} exact component={portadalayout} />
-              <Route  component={Component404} />
-
-            </Switch>
-          </div>
-        </Router>
-      </div>
+      <Router history={history}>
+        <Switch>
+          <Route exact path={'/'} auth={auth} component={portadalayout} />
+          <Route path={'/producto/:_id'} auth={auth} component={Producto} />
+          <PrivateRoute exact path={'/2'} auth={auth} component={izquierdalayout} />
+        </Switch>
+      </Router>
     )
   }
 }
